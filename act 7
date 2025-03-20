@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    // Declarar variables y asignar valores enteros
+    int a = 5, b = 3, c = 2;
+
+    // Multiplicar las variables
+    int resultado = a * b * c;
+
+    // Mostrar el resultado
+    printf("El resultado de la multiplicación es: %d\n", resultado);
+
+    return 0;
+}
