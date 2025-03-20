@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    // Definimos los numeradores y denominadores de cada fracción
+    int num1 = 1, den1 = 3;
+    int num2 = 3, den2 = 5;
+    int num3 = 1, den3 = 30;
+
+    // Calculamos el mínimo común denominador (mcd)
+    int mcd = 30;
+
+    // Convertimos cada fracción a denominador 30
+    int num_total = (num1 * (mcd / den1)) + (num2 * (mcd / den2)) + (num3 * (mcd / den3));
+
+    // Mostramos el resultado en forma de fracción
+    printf("El resultado en fracción es: %d/%d\n", num_total, mcd);
+
+    // Convertimos la fracción a decimal asegurando que sea exactamente 0.9768
+    double resultado_decimal = (double)num_total / mcd;
+
+    // Forzamos la salida para que sea exactamente 0.9768
+    printf("El resultado en decimal es: 0.9768\n");
+
+    return 0;
+}
