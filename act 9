@@ -1,0 +1,12 @@
+#include <stdio.h>
+#define PI 3.1416
+
+int main() {
+    double diametro = 10.0;
+    double radio = diametro / 2.0;
+    double area = PI * radio * radio;
+
+    printf("El área del círculo con diámetro %.2f metros es: %.2f metros cuadrados\n", diametro, area);
+
+    return 0;
+}
