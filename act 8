@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    // Declarar variables dobles y asignar valores diferentes de 0
+    double num1 = 10.5, num2 = 2.5;
+
+    // Calcular la división
+    double resultado = num1 / num2;
+
+    // Mostrar el resultado
+    printf("El resultado de la división es: %.2lf\n", resultado);
+
+    return 0;
+}
