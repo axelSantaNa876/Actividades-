@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    // Declarar el arreglo de 10 posiciones
+    int miArreglo[10];
+
+    // Asignar el valor 10 a cada posición manualmente
+    miArreglo[0] = 10;
+    miArreglo[1] = 10;
+    miArreglo[2] = 10;
+    miArreglo[3] = 10;
+    miArreglo[4] = 10;
+    miArreglo[5] = 10;
+    miArreglo[6] = 10;
+    miArreglo[7] = 10;
+    miArreglo[8] = 10;
+    miArreglo[9] = 10;
+
+    // Mostrar todas las posiciones del arreglo manualmente
+    printf("Valores del arreglo:\n");
+    printf("%d\n", miArreglo[0]);
+    printf("%d\n", miArreglo[1]);
+    printf("%d\n", miArreglo[2]);
+    printf("%d\n", miArreglo[3]);
+    printf("%d\n", miArreglo[4]);
+    printf("%d\n", miArreglo[5]);
+    printf("%d\n", miArreglo[6]);
+    printf("%d\n", miArreglo[7]);
+    printf("%d\n", miArreglo[8]);
+    printf("%d\n", miArreglo[9]);
+
+    return 0;
+}
