@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+float calcular_salario(float horas_trabajadas, float precio_hora) {
+    float salario;
+    if (horas_trabajadas <= 40) {
+        salario = horas_trabajadas * precio_hora;
+    } else {
+        salario = (40 * precio_hora) + ((horas_trabajadas - 40) * precio_hora * 1.5);
+    }
+    return salario;
+}
+
+int main() {
+    float horas, precio, salario_total;
+
+    // Solicitar datos al usuario
+    printf("Ingrese las horas semanales trabajadas: ");
+    scanf("%f", &horas);
+    
+    printf("Ingrese el precio por hora: ");
+    scanf("%f", &precio);
+
+    // Calcular salario
+    salario_total = calcular_salario(horas, precio);
+
+    // Mostrar resultado
+    printf("El salario semanal es: $%.2f\n", salario_total);
+
+    return 0;
+}
