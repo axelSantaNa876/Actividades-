@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main() {
+    int aniosAntiguedad;
+    float sueldoMensual;
+    
+    // Solicitar datos al usuario
+    printf("Ingrese los años de antigüedad en el trabajo: ");
+    scanf("%d", &aniosAntiguedad);
+
+    printf("Ingrese su sueldo mensual: ");
+    scanf("%f", &sueldoMensual);
+
+    // Calcular el 10% del sueldo
+    float porcentajeSueldo = sueldoMensual * 0.10;
+
+    // Verificar si cumple los requisitos
+    int cumpleAntiguedad = (aniosAntiguedad >= 5);
+    int cumpleSueldo = (porcentajeSueldo > 1000);  // Debe ser estrictamente mayor a 1000
+
+    printf("\nResultados de la evaluación:\n");
+
+    if (cumpleAntiguedad) {
+        printf("- Cumple con la antigüedad requerida.\n");
+    } else {
+        printf("- NO cumple con la antigüedad requerida.\n");
+    }
+
+    if (cumpleSueldo) {
+        printf("- Cumple con el 10%% del sueldo (%.2f > 1000).\n", porcentajeSueldo);
+    } else {
+        printf("- NO cumple con el 10%% del sueldo (%.2f <= 1000).\n", porcentajeSueldo);
+    }
+
+    // Verificar si cumple ambos requisitos
+    if (cumpleAntiguedad && cumpleSueldo) {
+        printf("\n¡Felicidades! Usted es apto para un crédito hipotecario.\n");
+    } else {
+        printf("\nLo sentimos, usted NO es apto para un crédito hipotecario.\n");
+    }
+
+    return 0;
+}
