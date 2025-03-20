@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int edad = 18; // Edad fija en 18 años según tu petición
+    int dias_por_anio = 365;
+    int horas_por_dia = 24;
+    int minutos_por_hora = 60;
+    int segundos_por_minuto = 60;
+
+    long long segundos_vividos = (long long) edad * dias_por_anio * horas_por_dia * minutos_por_hora * segundos_por_minuto;
+
+    printf("Si tienes %d años, has vivido aproximadamente %lld segundos.\n", edad, segundos_vividos);
+
+    return 0;
+}
