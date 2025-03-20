@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Sumas solicitadas
+    int suma1 = 5 + 8;
+    int suma2 = 78787 + 3259;
+
+    // Imprimir resultados
+    cout << "La suma de 5 + 8 es: " << suma1 << endl;
+    cout << "La suma de 78787 + 3259 es: " << suma2 << endl;
+
+    return 0;
+}
