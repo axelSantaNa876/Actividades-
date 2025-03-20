@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+int main (){
+int arreglo[20];
+int i=1;
+int numero=1;
+while (i<20){
+arreglo[i]=  2*i;
+printf("2*%d=%d\n", numero , arreglo[i]);
+i++;
+numero++;
+}
+system ("Pause");
+
+return 0;
+}
