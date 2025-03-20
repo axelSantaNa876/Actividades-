@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int vector[100];
+    int i;
+
+    for (i = 0; i < 100; i++) {
+        vector[i] = 100 - i;
+    }
+
+    for (i = 0; i < 100; i++) {
+        printf("%d\n", vector[i]);
+    }
+
+    return 0;
+}
