@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char palabra1[50];
+    char palabra2[50];
+    char temp[50];
+printf("Ingresa la primera palabra: ");
+    scanf("%s", palabra1);
+    printf("Ingresa la segunda palabra: ");
+    scanf("%s", palabra2);
+
+    printf("\nAntes del intercambio:\n");
+    printf("Palabra_1 = %s\n", palabra1);
+    printf("Palabra_2 = %s\n", palabra2);
+strcpy(temp, palabra1);
+    strcpy(palabra1, palabra2);
+    strcpy(palabra2, temp);
+printf("\nDespués del intercambio:\n");
+    printf("Palabra_1 = %s\n", palabra1);
+    printf("Palabra_2 = %s\n", palabra2);
+
+    return 0;
+}
