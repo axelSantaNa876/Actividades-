@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <time.h>
+
+int y;
+
+void func() {
+    int x = 40;
+    y = x;
+    x = 23;
+}
+
+int main() {
+    clock_t inicio, fin;
+    double tiempo;
+
+    inicio = clock();
+
+    func();
+    y = 25;
+
+    fin = clock();
+
+    tiempo = (fin - inicio) * 1000.0; 
+
+    printf("El valor de y es: %d\n", y);
+    printf("Tiempo de ejecución: %.3f milisegundos (valores crudos del reloj)\n", tiempo);
+
+    return 0;
+}
